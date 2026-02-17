@@ -1,0 +1,111 @@
+---------- Resultados pesos dic-24 ----------
+
+Celaya Test set: 0.9760734000123572 
+Celaya MSE:15.060642566377577 Best model:XGBRegressor(base_score=None, booster=None, callbacks=None,
+             colsample_bylevel=None, colsample_bynode=None,
+             colsample_bytree=None, device=None, early_stopping_rounds=None,
+             enable_categorical=False, eval_metric=None, feature_types=None,
+             gamma=None, grow_policy=None, importance_type=None,
+             interaction_constraints=None, learning_rate=None, max_bin=None,
+             max_cat_threshold=None, max_cat_to_onehot=None,
+             max_delta_step=None, max_depth=None, max_leaves=None,
+             min_child_weight=None, missing=nan, monotone_constraints=None,
+             multi_strategy=None, n_estimators=None, n_jobs=None,
+             num_parallel_tree=None, random_state=42, ...)
+Celaya MAE:1.3532057263058375
+Celaya Full set R^2: 0.9559158266822987
+Celaya Res Mean: -0.0073290025791697185
+
+PtaMerida Test set: 0.933002955871732 
+PtaMerida MSE:62.71987906654551 Best model:GradientBoostingRegressor(random_state=0)
+PtaMerida MAE:4.320970021288276
+PtaMerida Full set R^2: 0.9240902245829311
+PtaMerida Res Mean: 0.012648395833402694
+
+Monterrey Test set: 0.976840559320445 
+Monterrey MSE:53.522519563801296 Best model:GradientBoostingRegressor(random_state=0)
+Monterrey MAE:3.8515037712801723
+Monterrey Full set R^2: 0.9774577120041338
+Monterrey Res Mean: 0.014035214295734705
+
+Obregon Test set: 0.9450255342460199 
+Obregon MSE:34.40978098280993 Best model:GradientBoostingRegressor(random_state=0)
+Obregon MAE:4.071720161913356
+Obregon Full set R^2: 0.9557793338026234
+Obregon Res Mean: 0.04398137928403499
+
+Nexxus Test set: 0.9993640204473383 
+Nexxus MSE:6.833905955478168 Best model:XGBRegressor(base_score=None, booster=None, callbacks=None,
+             colsample_bylevel=None, colsample_bynode=None,
+             colsample_bytree=None, device=None, early_stopping_rounds=None,
+             enable_categorical=False, eval_metric=None, feature_types=None,
+             gamma=None, grow_policy=None, importance_type=None,
+             interaction_constraints=None, learning_rate=None, max_bin=None,
+             max_cat_threshold=None, max_cat_to_onehot=None,
+             max_delta_step=None, max_depth=None, max_leaves=None,
+             min_child_weight=None, missing=nan, monotone_constraints=None,
+             multi_strategy=None, n_estimators=None, n_jobs=None,
+             num_parallel_tree=None, random_state=42, ...)
+Nexxus MAE:1.2051103043566982
+Nexxus Full set R^2: 0.9990870725987584
+Nexxus Res Mean: -0.004026268914116171
+Merida Test set: 0.906597585572864 
+Merida MSE:59.27855085377362 Best model:GradientBoostingRegressor(random_state=0)
+Merida MAE:5.481228949895116
+Merida Full set R^2: 0.9156512672892309
+Merida Res Mean: -0.022273078417454833
+Azcapotzalco Test set: 0.9367242859887371 
+Azcapotzalco MSE:32.181849819625626 Best model:GradientBoostingRegressor(random_state=0)
+Azcapotzalco MAE:4.279471383306132
+Azcapotzalco Full set R^2: 0.9337631360992165
+Azcapotzalco Res Mean: -0.02287477549175143
+Porteo Test set: 0.9967996470436848 
+Porteo MSE:1.7364944817366692 Best model:XGBRegressor(base_score=None, booster=None, callbacks=None,
+             colsample_bylevel=None, colsample_bynode=None,
+             colsample_bytree=None, device=None, early_stopping_rounds=None,
+             enable_categorical=False, eval_metric=None, feature_types=None,
+             gamma=None, grow_policy=None, importance_type=None,
+             interaction_constraints=None, learning_rate=None, max_bin=None,
+             max_cat_threshold=None, max_cat_to_onehot=None,
+             max_delta_step=None, max_depth=None, max_leaves=None,
+             min_child_weight=None, missing=nan, monotone_constraints=None,
+             multi_strategy=None, n_estimators=None, n_jobs=None,
+             num_parallel_tree=None, random_state=42, ...)
+Porteo MAE:0.8729676306661566
+Porteo Full set R^2: 0.9974151666576616
+Porteo Res Mean: -0.002553979427984551
+SanMartin Test set: 0.9696215836006273 
+SanMartin MSE:13.796347642216501 Best model:GradientBoostingRegressor(random_state=0)
+SanMartin MAE:2.84083183182863
+SanMartin Full set R^2: 0.9690454472643308
+SanMartin Res Mean: 0.041412388579007586
+Tijuana Test set: 0.8981559388818643 
+Tijuana MSE:144.10245545162465 Best model:GradientBoostingRegressor(random_state=0)
+Tijuana MAE:7.7536263479319985
+Tijuana Full set R^2: 0.8962021527058719
+Tijuana Res Mean: 0.041556356657035304
+Guadalajara Test set: 0.8994347778141693 
+Guadalajara MSE:104.73523976314588 Best model:GradientBoostingRegressor(random_state=0)
+Guadalajara MAE:7.06915761747236
+Guadalajara Full set R^2: 0.9014545237572054
+Guadalajara Res Mean: 0.04742382201315832
+PlantaObregon Test set: 0.9012130642578735 
+PlantaObregon MSE:94.98381143823299 Best model:GradientBoostingRegressor(random_state=0)
+PlantaObregon MAE:5.068439495752415
+PlantaObregon Full set R^2: 0.9214403648178137
+PlantaObregon Res Mean: -0.028875049318333554
+NexxusCAP Test set: 0.9957899938561645 
+NexxusCAP MSE:3.0134186082074326 Best model:XGBRegressor(base_score=None, booster=None, callbacks=None,
+             colsample_bylevel=None, colsample_bynode=None,
+             colsample_bytree=None, device=None, early_stopping_rounds=None,
+             enable_categorical=False, eval_metric=None, feature_types=None,
+             gamma=None, grow_policy=None, importance_type=None,
+             interaction_constraints=None, learning_rate=None, max_bin=None,
+             max_cat_threshold=None, max_cat_to_onehot=None,
+             max_delta_step=None, max_depth=None, max_leaves=None,
+             min_child_weight=None, missing=nan, monotone_constraints=None,
+             multi_strategy=None, n_estimators=None, n_jobs=None,
+             num_parallel_tree=None, random_state=42, ...)
+NexxusCAP MAE:0.9264514210924083
+NexxusCAP Full set R^2: 0.9970956571833222
+NexxusCAP Res Mean: 0.008034631066031153

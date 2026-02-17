@@ -1,0 +1,61 @@
+=== LOG DE ENTRENAMIENTO - oct-25 ===
+Fecha y hora de inicio: 2025-10-01 18:33:26
+Carpeta de modelos: C:\Users\81155875\Documents\Sale_In_Transit_Predictive_Model\src\train\ModelosEntrenados\oct-25
+==================================================
+
+Dataset cargado: 12508 registros
+Mixings encontrados: 16
+Mixings: Celaya, PtaMerida, Monterrey, Obregon, Nexxus, Merida, Azcapotzalco, Porteo, SanMartin, Tijuana, Guadalajara, PlantaObregon, NexxusCAP, CenterObregon, SMCPuebla, CenterSaltillo
+
+[18:33:27] Iniciando entrenamiento: Celaya
+[18:33:29] Finalizado entrenamiento: Celaya
+
+[18:33:29] Iniciando entrenamiento: PtaMerida
+[18:33:29] Finalizado entrenamiento: PtaMerida
+
+[18:33:29] Iniciando entrenamiento: Monterrey
+[18:33:31] Finalizado entrenamiento: Monterrey
+
+[18:33:31] Iniciando entrenamiento: Obregon
+[18:33:32] Finalizado entrenamiento: Obregon
+
+[18:33:32] Iniciando entrenamiento: Nexxus
+[18:33:33] Finalizado entrenamiento: Nexxus
+
+[18:33:33] Iniciando entrenamiento: Merida
+[18:33:34] Finalizado entrenamiento: Merida
+
+[18:33:34] Iniciando entrenamiento: Azcapotzalco
+[18:33:36] Finalizado entrenamiento: Azcapotzalco
+
+[18:33:36] Iniciando entrenamiento: Porteo
+[18:33:37] Finalizado entrenamiento: Porteo
+
+[18:33:37] Iniciando entrenamiento: SanMartin
+[18:33:38] Finalizado entrenamiento: SanMartin
+
+[18:33:38] Iniciando entrenamiento: Tijuana
+[18:33:39] Finalizado entrenamiento: Tijuana
+
+[18:33:39] Iniciando entrenamiento: Guadalajara
+[18:33:40] Finalizado entrenamiento: Guadalajara
+
+[18:33:40] Iniciando entrenamiento: PlantaObregon
+[18:33:41] Finalizado entrenamiento: PlantaObregon
+
+[18:33:41] Iniciando entrenamiento: NexxusCAP
+[18:33:42] Finalizado entrenamiento: NexxusCAP
+
+[18:33:42] Iniciando entrenamiento: CenterObregon
+[18:33:42] Finalizado entrenamiento: CenterObregon
+
+[18:33:42] Iniciando entrenamiento: SMCPuebla
+[18:33:43] Finalizado entrenamiento: SMCPuebla
+
+[18:33:43] Iniciando entrenamiento: CenterSaltillo
+[18:33:43] Finalizado entrenamiento: CenterSaltillo
+
+==================================================
+ENTRENAMIENTO COMPLETADO - 2025-10-01 18:33:43
+Total de modelos entrenados: 16
+==================================================

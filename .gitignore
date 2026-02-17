@@ -1,0 +1,8 @@
+/src/train/__pycache__/
+/src/train/*.csv
+/src/train/*.xlsx
+/src/train/training-data/*.csv
+
+/src/test/new_models/*.*
+/src/test/__pycache__/
+/src/test/input-data/*.csv

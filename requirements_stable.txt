@@ -1,0 +1,17 @@
+# Versiones estables y compatibles para PyInstaller
+numpy
+pandas
+scikit-learn
+scipy
+
+# Dependencias adicionales
+joblib
+threadpoolctl
+python-dateutil
+pytz
+tzdata
+six
+
+# Para Prophet (si se necesita)
+prophet
+cmdstanpy
