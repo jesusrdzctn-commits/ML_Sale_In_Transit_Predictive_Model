@@ -23,8 +23,10 @@ class BaseModel():
         self.target = "Y_Retorno"
         self.X = []
         self.X_doble = []
+        self.X_noon = []
         self.y_pred = []
         self.y_double_pred = []
+        self.y_noon_pred = []
  
     def correct_predictions(self, pred):
         for ind in self.data.index:
@@ -36,6 +38,10 @@ class BaseModel():
                 if ind > 1 and ind-2 in self.data.index:
                     if self.data.loc[ind, pred] < self.data.loc[ind-2, "Y_Retorno"]:
                         self.data.loc[ind, pred] = self.data.loc[ind-2, "Y_Retorno"]
+            elif self.data.loc[ind, "Monitoreo"] == 7 and self.data.loc[ind, "Horario"] == 12:
+                if ind > 0 and ind-1 in self.data.index:
+                    if self.data.loc[ind, pred] < self.data.loc[ind-1, "Y_Retorno"]:
+                        self.data.loc[ind, pred] = self.data.loc[ind-1, "Y_Retorno"]
             else:
                 pass
  
@@ -116,6 +122,29 @@ class BaseModel():
                          "Y_Retorno_Pred",
                          "Y_Retorno_Pred_Doble"],
                 index=False, encoding="cp1252")
+        elif pred == "mediodia":
+            if (self.data['Y_Retorno'] == 0).any():
+                self.data['Y_Retorno_Pred'] = self.data['Y_Retorno_Pred'].apply(
+                    lambda x: 0 if pd.notna(x) else x
+                )
+            columns_to_save = [
+                "Mixing Nombre",
+                "Fecha de Corte",
+                "Y_Retorno",
+                "Monitoreo",
+                "Horario",
+                "Facturación A",
+                "Retornado A",
+                "Mes Monitoreo",
+                "Y_Retorno_Pred"
+            ]
+            existing_columns = [col for col in columns_to_save if col in self.data.columns]
+            self.data.to_csv(
+                self.folder + "/predicciones_" + self.mixin + ".csv",
+                columns=existing_columns,
+                index=False,
+                encoding="cp1252"
+            )
         else:
             if (self.data['Y_Retorno'] == 0).any():
                 self.data['Y_Retorno_Pred'] = self.data['Y_Retorno_Pred'].apply(lambda x: 0 if pd.notna(x) else x)
@@ -159,6 +188,11 @@ class BaseModel():
             self.predict("second")
             self.correct_predictions("Y_Retorno_Pred_Doble")
             self.save_predictions("double")
+        elif prediction == "mediodia":
+            self.prepare_data(12)
+            self.predict("first")
+            self.correct_predictions("Y_Retorno_Pred")
+            self.save_predictions("mediodia")
         else:
             self.prepare_data(21)
             self.predict("first")
@@ -175,6 +209,10 @@ class BaseModel():
                 if ind > 1 and ind-2 in self.data.index:
                     if self.data.loc[ind, pred] < self.data.loc[ind-2, "Y_Retorno"]:
                         self.data.loc[ind, pred] = self.data.loc[ind-2, "Y_Retorno"]
+            elif self.data.loc[ind, "Monitoreo"] == 7 and self.data.loc[ind, "Horario"] == 12:
+                if ind > 0 and ind-1 in self.data.index:
+                    if self.data.loc[ind, pred] < self.data.loc[ind-1, "Y_Retorno"]:
+                        self.data.loc[ind, pred] = self.data.loc[ind-1, "Y_Retorno"]
             else:
                 pass
  
@@ -199,4 +237,3 @@ class BaseMixin(BaseModel):
     def create_variables_doble(self, ):
         self.previous_invoicing()
         self.monitoring_times_invoicing()
-        
