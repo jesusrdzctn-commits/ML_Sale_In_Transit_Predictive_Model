@@ -206,7 +206,6 @@ def join_data(folder, pred, monitoring):
     if not dataframes:
         print(f"❌ No hay dataframes válidos para concatenar")
         raise ValueError("No valid dataframes to concatenate")
-   
     print(f"🔗 Concatenando {len(dataframes)} dataframes...")
     concatenated_df = pd.concat(dataframes, ignore_index=True)
     print(f"✅ DataFrame concatenado creado: {len(concatenated_df)} filas, {len(concatenated_df.columns)} columnas")
@@ -254,6 +253,25 @@ def join_data(folder, pred, monitoring):
         preds.to_csv(output_file, index=False, encoding="cp1252")
         print(f"✅ Archivo de predicciones dobles guardado: {output_file}")
         print(f"📊 Total predicciones: {len(preds)}")
+
+    elif pred == "mediodia":
+        print(f"🎯 Procesando predicciones mediodía (12PM)...")
+        noon_pred = concatenated_df[concatenated_df["Horario"] == 12].copy()
+        required_columns = ["Mixing Nombre", "Fecha de Corte", "Horario", "Mes Monitoreo", "Y_Retorno_Pred"]
+        noon_pred = noon_pred[required_columns].copy()
+        
+        noon_pred.columns = [
+            "Mixing Nombre",
+            "Fecha de Corte",
+            "Horario",
+            "Mes Monitoreo",
+            "Predicción"
+        ]
+        output_file = "Predicciones Mediodia " + monitoring + ".csv"
+        noon_pred.to_csv(output_file, index=False, encoding="cp1252")
+        print(f"✅ Archivo de predicciones mediodia guardado: {output_file}")
+        print(f"📊 Total predicciones: {len(noon_pred)}")
+        
     else:
         print(f"🎯 Procesando predicciones simples...")
         simple_pred = concatenated_df[concatenated_df["Horario"] == 21].copy()

@@ -25,14 +25,16 @@ def main():
         else:
             os.mkdir(folder)
             print(f"✓ Carpeta creada: {folder}")
-    else:
-        folder = "Predicciones Simples " + monitoring
+    elif prediction == "mediodia":
+        folder = "Predicciones Mediodia " + monitoring
         check = os.path.isdir(folder)
         if check:
             print(f"✓ Carpeta existente: {folder}")
         else:
             os.mkdir(folder)
             print(f"✓ Carpeta creada: {folder}")
+    else:
+        folder = "Predicciones Simples " + monitoring
     
     print(f"📁 Carpeta de destino: {folder}")
     print(f"📂 Ruta absoluta: {os.path.abspath(folder)}")

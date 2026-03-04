@@ -131,7 +131,7 @@ class Obregon(BaseModel):
                 ]
 
 ##Adicionar-New
-class Henco(BaseMixin):
+class MixingHenco(BaseMixin):
     def __init__(self, mixin_name, mixin_data, folder):
         super().__init__(mixin_name, mixin_data, folder)
         self.predictors = [
