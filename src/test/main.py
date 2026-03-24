@@ -35,6 +35,12 @@ def main():
             print(f"✓ Carpeta creada: {folder}")
     else:
         folder = "Predicciones Simples " + monitoring
+        check = os.path.isdir(folder)
+        if check:
+            print(f"✓ Carpeta existente: {folder}")
+        else:
+            os.mkdir(folder)
+            print(f"✓ Carpeta creada: {folder}")
     
     print(f"📁 Carpeta de destino: {folder}")
     print(f"📂 Ruta absoluta: {os.path.abspath(folder)}")
