@@ -6,5 +6,7 @@
 /src/test/new_models/*.*
 /src/test/__pycache__/
 /src/test/input-data/*.csv
+/src/test/*.csv
+/src/test/Predicciones*
 
 app/__pycache__/
