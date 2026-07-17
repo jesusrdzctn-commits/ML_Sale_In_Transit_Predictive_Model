@@ -8,5 +8,6 @@
 /src/test/input-data/*.csv
 /src/test/*.csv
 /src/test/Predicciones*
+/src/Resultados_Predictivo_vs_Valor_Real/
 
 app/__pycache__/

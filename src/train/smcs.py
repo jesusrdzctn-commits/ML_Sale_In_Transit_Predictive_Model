@@ -245,7 +245,7 @@ class SMCPuebla(BaseModel):
 #Adicionar-New models for Revenue Recognition
 
 #Adicionar-New models for Revenue Recognition
-class CenterObregon(BaseModel):
+class MixingHenco(BaseModel):
     """This class inherits from BaseModel and trains ObregonSMC Model."""
     def __init__(self, ):
         self.predictors = [

@@ -60,7 +60,7 @@ class BaseModel():
             [self.data, pd.DataFrame(row)],
             ignore_index=True
         )
- 
+
     def load_models(self, ):
         models = ["mse"]
         for model in models:
