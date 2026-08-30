@@ -117,14 +117,3 @@ pip install -r requirements_stable.txt
 ```
 
 Key dependencies: pandas, numpy, scikit-learn, prophet/cmdstanpy (versions kept PyInstaller-compatible).
-
-## Known caveats (audit notes)
-
-1. `train_test`'s docstring promises four models (including XGB) but only three are trained.
-2. Model selection relies on a single fixed 70/30 split (no cross-validation), and the reported full-set R² after refit is in-sample.
-3. Input file selection is by file modification time, not by validated file name.
-4. The training filter keeps `validacion` not in {"Fuera","fuera"} while prediction keeps only `"pasa"` — subtly different populations.
-5. `prepare_data_double` assigns `X_doble.loc[2, "Retornado Anterior"]` by hard-coded positional index.
-6. Trained pickles must be manually promoted to `new_models/`; there is no automated hand-off.
-7. `Facturacion_Monitoreo` means `FactA/Horario` in three centers but `FactA/Monitoreo` in Porteo.
-8. The `Maizoro` center has a prediction class but is excluded from training data.
