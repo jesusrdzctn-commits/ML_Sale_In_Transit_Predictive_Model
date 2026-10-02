@@ -100,7 +100,7 @@ class BaseModel():
  
     def train_test(self, mixing_data):
         """
-        Entrena 4 modelos (GradientBoosting, XGB, SVR y Prophet), selecciona el mejor
+        Entrena 3 modelos (GradientBoosting, SVR y Prophet), selecciona el mejor
         según R², MSE y MAE, y reporta métricas.
         """
         # ---------------------------------------------------------------------
